@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block game %}
+<h1>Game Time!</h1>
+<form action="/roshambo" method="post">
+Welcome to ROSHAMBO!
+<p><u>How To Play</u></p>
+<p>Select your weapon. Scissors cut Paper, Paper covers Rock, Rock breaks Scissors. </p>
+<p></p>May the odds be ever in your favour.</p>
+<label for="name1">Player 1 name:</label>
+<input type="text" name="name1" id="name1">
+<label for="weapon1">rock/paper/scissors</label>
+<input type="text" name="weapon1" id="weapon1">
+<br>
+<label for="name2">Player 2 name:</label>
+<input type="text" name="name2" id="name2">
+<label for="weapon2">rock/paper/scissors</label>
+<input type="text" name="weapon2" id="weapon2">
+<br>
+<input type="submit" value="ROSHAMBO">
+</form>
+        
+{% endblock %}
